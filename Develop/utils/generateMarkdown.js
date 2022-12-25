@@ -1,7 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 
-
+//this function takes the user's answer to licensure to create the badge and url needed in the readme file
 function licenseURLs(data)  {
 
   if (data.license === 'none')
@@ -43,8 +43,12 @@ function licenseURLs(data)  {
 // TODO: Create a function that returns the license section of README
 
 // TODO: Create a function to generate markdown for README
+//this function generates what will be written to the readme file
+//this styles the readme and pulls user input to customize the sections based off of the user input
 function generateMarkdown(data) {
 
+//if the user chose to not include a license this will be returned
+//this excludes the license badge and explains no license was used for the project
   if (data.license === 'none') {
     return  `# ${data.projectTitle}
 
@@ -82,14 +86,13 @@ function generateMarkdown(data) {
     ;`
   }
 
-
+//if the user does use a license then this is returned and written to the readme file
+//this includes the license badge under the project title
+//provides a link and license info in readme's license section
 else {
-  
-
 licenseURLs(data)
 console.log(url)
 console.log(badge)
-
   
 return `# ${data.projectTitle}
 
@@ -131,4 +134,5 @@ This project is licensed under the ${data.license}.
 `;
 } };
 
+//these functions are the exports returned to the required files
 module.exports = {generateMarkdown, licenseURLs};
