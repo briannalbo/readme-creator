@@ -52,7 +52,7 @@ function generateMarkdown(data) {
   if (data.license === 'none') {
     return  `# ${data.projectTitle}
 
-      ## Description)
+      ## Description
       ${data.description}
     
       ## Table of Contents
