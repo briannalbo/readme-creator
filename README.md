@@ -19,7 +19,7 @@
   ensure node is installed, npm install inquirer@8.2.4
 
   ## Usage
-  open the terminal on the index.js files then enter node index.js to begin question promtpt
+  open the terminal on the index.js files then enter node index.js to begin question prompt
 
   ## License
 This project is licensed under the Apache License 2.0.
