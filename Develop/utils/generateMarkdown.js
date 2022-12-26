@@ -46,44 +46,40 @@ function licenseURLs(data)  {
 //this function generates what will be written to the readme file
 //this styles the readme and pulls user input to customize the sections based off of the user input
 function generateMarkdown(data) {
-
 //if the user chose to not include a license this will be returned
 //this excludes the license badge and explains no license was used for the project
-  if (data.license === 'none') {
-    return  `# ${data.projectTitle}
-
-      ## Description
-      ${data.description}
+if (data.license === 'none') {
+ return  `# ${data.projectTitle}
+## Description
+${data.description}
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributions](#contributions)
+- [Tests](#tests)
+- [Questions](#questions)
     
-      ## Table of Contents
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contributions](#contributions)
-    - [Tests](#tests)
-    - [Questions](#questions)
+## Installation
+${data.installation}
     
-      ## Installation
-      ${data.installation}
+## Use
+${data.usage}
     
-      ## Use
-      ${data.usage}
-    
-      ## License
-      This project does not use a license.
+## License
+This project does not use a license.
       
     
-      ## Contributions
-      ${data.contribute}
+## Contributions
+${data.contribute}
     
-      ## Tests
-      ${data.tests}
+## Tests
+${data.tests}
     
-      ## Questions
-      For any questions or concerns, please refer to my github account or contact me via email: 
-      - https://github.com/${data.username}
-      - email: ${data.email}
-    ;`
+## Questions
+For any questions or concerns, please refer to my github account or contact me via email: 
+- https://github.com/${data.username}
+- email: ${data.email};`
   }
 
 //if the user does use a license then this is returned and written to the readme file
