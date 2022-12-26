@@ -19,8 +19,8 @@
   ensure node is installed, npm install inquirer@8.2.4
 
   ## Usage
-  Open the terminal on the index.js files then enter node index.js to begin question prompt.
-  walk through video: https://drive.google.com/file/d/11uZbUoymqC_f98UgpntMZ8AkBV5p2yUe/view
+ Open the terminal on the index.js files then enter node index.js to begin question prompt.
+ - Walk through video: https://drive.google.com/file/d/11uZbUoymqC_f98UgpntMZ8AkBV5p2yUe/view
 
   ## License
 This project is licensed under the Apache License 2.0.
